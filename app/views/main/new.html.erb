@@ -1,0 +1,17 @@
+<h1>Sit down and WRITE a blog post NOW</h1>
+
+<%= form_with url: "/post", local: true do %>
+
+	<label for="title">Title</label>
+	<input type="text" name="title" minlength='1' maxlength ='100' required />
+	<br />
+	<label for="content">Stuff Goes Here!</label>
+	<textarea type="text" name="content" style="height: 40px; width: 200px" minlength='1' maxlength ='400' required ></textarea>
+	<br />
+	<input type="submit" value="Post it, baby!">
+
+
+<% end %>
+
+<br />
+<h6><%= link_to "Back to Posts", :posts %></h6>

@@ -1,0 +1,7 @@
+<h3><%= @post.title %></h3>
+<p><%= @post.content %></p>
+
+<h6><%= link_to "update this post", "/update/#{@post.id}" %></h6>
+<%= button_to 'button version of delete', delete_path, method: :delete %>
+
+<h6><%= link_to "Back to Posts", :posts %></h6>

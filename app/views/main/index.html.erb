@@ -1,0 +1,10 @@
+<h1>Check, check, one, two...</h1>
+
+<ul>
+<% @posts.each do |post| %>
+<li>
+  <%= link_to post.title, post %>
+</li>
+<% end %>
+</ul>
+<h6><%= link_to "Write your own post!", :new %></h6>
